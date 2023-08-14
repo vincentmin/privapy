@@ -9,3 +9,4 @@ build
 docs/_build
 *.backup
 .python-version
+*.txt

@@ -1,7 +1,9 @@
-from typing import *
+"""Text cleaner module."""
+
+from typing import Callable, List, Literal, Union
 from .methods.base import BaseMethod
-from .methods.regex import *
-from .methods.model import *
+from .methods.regex import EmailCleaner, DateCleaner, TimeCleaner
+from .methods.model import HuggingFacePipeline
 
 DEFAULT_STEP_TYPES = Literal["all", "regex", "models"]
 DEFAULT_REGEX_STEPS = [EmailCleaner, DateCleaner, TimeCleaner]
@@ -10,7 +12,17 @@ STEP_TYPE = Union[BaseMethod, Callable[[str], str]]
 
 
 class TextCleaner:
-    def __init__(self, steps: Union[DEFAULT_STEP_TYPES, List[STEP_TYPE]]):
+    """Text cleaner class used to excecute a series of cleaning steps on a text."""
+
+    def __init__(self, steps: Union[DEFAULT_STEP_TYPES, List[STEP_TYPE]] = "all"):
+        """Initialize TextCleaner
+
+        Args:
+            steps (Union[DEFAULT_STEP_TYPES, List[STEP_TYPE]]): the cleaning steps to
+            excecute on the text. Can be a list of BaseMethod objects or a list of functions
+            that take a string and return a string. Alternatively, can be a string with the
+            value "all", "regex" or "models" to use the default steps. Defaults to "all".
+        """
         if isinstance(steps, str):
             if steps == "all":
                 steps = DEFAULT_REGEX_STEPS + DEFAULT_MODEL_STEPS
@@ -26,6 +38,14 @@ class TextCleaner:
         self.steps = steps
 
     def clean(self, text: str) -> str:
+        """Clean a text by excecuting the cleaning steps.
+
+        Args:
+            text (str): the text to clean
+
+        Returns:
+            str: the cleaned text
+        """
         for step in self.steps:
             text = step(text)
         return text
