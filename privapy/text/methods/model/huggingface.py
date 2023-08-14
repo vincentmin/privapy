@@ -1,4 +1,4 @@
-from transformers import pipeline
+# from transformers import pipeline
 
 from ..base import BaseMethod
 
@@ -8,7 +8,9 @@ class HuggingFacePipeline(BaseMethod):
         self, model_name: str = "dslim/bert-base-NER", replacement: str = "<<ENT>>"
     ):
         self.model_name = model_name
-        self.model = pipeline("ner", model=self.model_name, grouped_entities=True)
+        self.model = (
+            None  # pipeline("ner", model=self.model_name, grouped_entities=True)
+        )
         self.replacement = replacement
 
     def __call__(self, text: str) -> str:

@@ -1,5 +1,5 @@
 import unittest
-from privapy.text.methods import EmailCleaner
+from privapy.text.methods.regex import EmailCleaner
 
 
 class TestEmailCleaner(unittest.TestCase):
