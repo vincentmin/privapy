@@ -11,12 +11,14 @@ KEYWORDS         = "anonymize"
 URL              = "https://github.com/vincentmin/" + NAME
 README           = ".github/README.md"
 CLASSIFIERS      = [
-  "Development Status :: 2 - Pre-Alpha, Intended Audience :: Developers",
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
   "Topic :: Software Development :: Libraries :: Python Modules",
   "license License :: OSI Approved :: MIT License",
   
 ]
 INSTALL_REQUIRES = [
+  "transformers",
   
 ]
 ENTRY_POINTS = {

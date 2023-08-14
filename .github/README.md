@@ -1,6 +1,6 @@
 # privapy
 
-> 
+> Anonymize your data
 
 [![Latest Version on PyPI](https://img.shields.io/pypi/v/privapy.svg)](https://pypi.python.org/pypi/privapy/)
 [![Supported Implementations](https://img.shields.io/pypi/pyversions/privapy.svg)](https://pypi.python.org/pypi/privapy/)
