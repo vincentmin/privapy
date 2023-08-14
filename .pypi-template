@@ -1,0 +1,21 @@
+a_description_for_the_package: Anonymize your data
+classifiers:
+- 'Development Status :: 2 - Pre-Alpha, Intended Audience :: Developers'
+- 'Topic :: Software Development :: Libraries :: Python Modules'
+- 'license License :: OSI Approved :: MIT License'
+console_scripts: []
+first_year_of_publication: '2023'
+github_account: vincentmin
+github_repo_name: privapy
+keywords_describing_the_package: anonymize
+license: MIT License
+package_module_name: privapy
+package_name: privapy
+package_tagline: ''
+package_title: privapy
+requires: []
+scripts: []
+your_author_name: Vincent Min
+your_email_address: vincentmin17@gmail.com
+your_full_name: Vincent Min
+your_name: Min
