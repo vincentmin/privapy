@@ -44,7 +44,7 @@ Current classifiers:
 - Topic :: Software Development
 - License :: OSI Approved :: MIT License
 - Programming Language :: Python
-- Programming Language :: Python :: 3.7
+- Programming Language :: Python :: 3.9
 Select classifiers:
 ...
 Your name: Vincent Min
