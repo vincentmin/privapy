@@ -45,9 +45,9 @@ Current classifiers:
 - License :: OSI Approved :: MIT License
 - Programming Language :: Python
 - Programming Language :: Python :: 3.7
-Select classifiers: 
+Select classifiers:
 ...
-Your name: Christophe VG
+Your name: Vincent Min
 backing up requirements.txt
 writing requirements.txt
 ```
@@ -106,7 +106,7 @@ SYNOPSIS
 
 DESCRIPTION
     It is essentially a set of templates, which you can customise using several
-    variables. The variables are stored in a file called `.pypi-template` in the 
+    variables. The variables are stored in a file called `.pypi-template` in the
     root of the project. You can edit this file directly, or use the `edit`
     command to do it in an interactive way.
 
@@ -157,7 +157,7 @@ The included `Makefile` offers several useful (IMHO) targets to perform some com
 A basic testing setup has been prepared. To run it locally, issue...
 
 ```console
-% make test                
+% make test
 tox
 GLOB sdist-make: /Users/xtof/Workspace/temp/setup.py
 py3 inst-nodeps: /Users/xtof/Workspace/temp/.tox/.tmp/package/1/temp-pypi-template-0.0.1.zip
@@ -168,7 +168,7 @@ py3 run-test: commands[0] | coverage run -m '--omit=*/.tox/*,*/distutils/*,tests
 platform darwin -- Python 3.8.12, pytest-7.1.2, pluggy-1.0.0
 cachedir: .tox/py3/.pytest_cache
 rootdir: /Users/xtof/Workspace/temp, configfile: tox.ini, testpaths: tests
-collected 1 item                                                                                                 
+collected 1 item
 
 tests/test_example.py .                                                                                    [100%]
 

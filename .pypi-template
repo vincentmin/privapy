@@ -3,7 +3,7 @@ classifiers:
   - "Development Status :: 2 - Pre-Alpha"
   - "Intended Audience :: Developers"
   - "Topic :: Software Development :: Libraries :: Python Modules"
-  - "license License :: OSI Approved :: MIT License"
+  - "License :: OSI Approved :: MIT License"
 console_scripts: []
 first_year_of_publication: "2023"
 github_account: vincentmin

@@ -14,7 +14,7 @@ CLASSIFIERS = [
     "Development Status :: 2 - Pre-Alpha",
     "Intended Audience :: Developers",
     "Topic :: Software Development :: Libraries :: Python Modules",
-    "license License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: MIT License",
 ]
 INSTALL_REQUIRES = [
     "transformers==4.31.0",
