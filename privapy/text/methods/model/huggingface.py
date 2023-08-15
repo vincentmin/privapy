@@ -10,7 +10,10 @@ class HuggingFacePipeline(BaseMethod):
     """
 
     def __init__(
-        self, model_name: str = "dslim/bert-base-NER", replacement: str = "<<ENT>>"
+        self,
+        model_name: str = "dslim/bert-base-NER",
+        replacement: str = "<<ENT>>",
+        **kwargs
     ):
         """Initialize HuggingFacePipeline
         Args:
@@ -20,7 +23,7 @@ class HuggingFacePipeline(BaseMethod):
             Defaults to "<<ENT>>".
         """
         self.model_name = model_name
-        self.model = pipeline("ner", model=self.model_name, grouped_entities=True)
+        self.model = pipeline("ner", model=self.model_name, **kwargs)
         self.replacement = replacement
 
     def __call__(self, text: str) -> str:

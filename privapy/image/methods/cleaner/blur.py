@@ -27,8 +27,8 @@ class BlurCleaner(BaseCleaner):
             np.ndarray: Cleaned image.
         """
         for box in bounding_boxes:
-            x1, y1, x2, y2 = box
-            image[y1:y2, x1:x2] = cv2.blur(
-                image[y1:y2, x1:x2], (self.blur_size, self.blur_size)
+            xmin, ymin, xmax, ymax = box
+            image[ymin:ymax, xmin:xmax] = cv2.blur(
+                image[ymin:ymax, xmin:xmax], (self.blur_size, self.blur_size)
             )
         return image

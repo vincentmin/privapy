@@ -16,7 +16,13 @@ CLASSIFIERS = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "License :: OSI Approved :: MIT License",
 ]
-INSTALL_REQUIRES = ["transformers==4.31.0", "torch==2.0.1", "opencv-python==4.8"]
+INSTALL_REQUIRES = [
+    "transformers==4.31.0",
+    "torch==2.0.1",
+    "opencv-python==4.8.0.76",
+    "pillow",
+    "timm",
+]
 ENTRY_POINTS = {}
 SCRIPTS = []
 

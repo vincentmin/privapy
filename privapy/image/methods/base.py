@@ -1,19 +1,21 @@
 """Base image method classes."""
 from typing import List
 import numpy as np
+import PIL
 
 
 class BaseDetector:
     """Base class for detection methods."""
 
-    def get_bounding_boxes(self, image: np.ndarray) -> List[np.ndarray]:
+    def get_bounding_boxes(self, image: PIL.Image.Image) -> List[np.ndarray]:
         """Detect objects in an image.
 
         Args:
-            image (np.ndarray): Image to detect objects in.
+            image (PIL.Image.Image): Image to detect objects in.
 
         Returns:
-            List[np.ndarray]: List of bounding boxes of detected objects. Format: [x1, y1, x2, y2]
+            List[np.ndarray]: List of bounding boxes of detected objects.
+            Format: [xmin, ymin, xmax, ymax]
         """
         raise NotImplementedError
 
