@@ -14,7 +14,7 @@ package_module_name: privapy
 package_name: privapy
 package_tagline: "Anonymize your data"
 package_title: privapy
-requires: [transformers==4.31.0, torch==2.0.1]
+requires: [transformers==4.31.0, torch==2.0.1, opencv-python==4.8]
 scripts: []
 your_author_name: Vincent Min
 your_email_address: vincentmin17@gmail.com

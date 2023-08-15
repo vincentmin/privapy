@@ -3,7 +3,7 @@ import re
 import setuptools
 
 NAME = "privapy"
-AUTHOR = "Min"
+AUTHOR = "Vincent Min"
 AUTHOR_EMAIL = "vincentmin17@gmail.com"
 DESCRIPTION = "Anonymize your data"
 LICENSE = "MIT License"
@@ -16,10 +16,7 @@ CLASSIFIERS = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "License :: OSI Approved :: MIT License",
 ]
-INSTALL_REQUIRES = [
-    "transformers==4.31.0",
-    "torch==2.0.1",
-]
+INSTALL_REQUIRES = ["transformers==4.31.0", "torch==2.0.1", "opencv-python==4.8"]
 ENTRY_POINTS = {}
 SCRIPTS = []
 
