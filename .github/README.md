@@ -12,3 +12,47 @@
 ## Documentation
 
 Visit [Read the Docs](https://privapy.readthedocs.org) for the full documentation, including overviews and several examples.
+
+## Installation
+
+```bash
+pip install privapy
+```
+
+## Usage
+
+### text
+
+```python
+from privapy.text import TextCleaner
+
+text = "I live in New York and work at Google. My email is john@google.com"
+cleaner = TextCleaner(steps="all")
+cleaned_text = cleaner.clean(text)
+# 'I live in <<ENT>> and work at <<ENT>. My email is <<EMAIL>>'
+```
+
+### image
+
+```python
+from privapy.image import ImageCleaner
+from PIL import Image
+
+cleaner = ImageCleaner()
+img = Image.open("image.jpg")
+cleaned_image = cleaner.clean(img)
+```
+
+## Coming in future releases
+
+- text
+  - Add more cleaning methods
+  - Add Spacy integration
+- image
+  - Add more cleaning methods
+    - blackout
+    - pixelate
+  - Add more detection methods
+    - face detection
+    - dlib
+    - mediapipe
