@@ -22,6 +22,10 @@ class TextCleaner:
             excecute on the text. Can be a list of BaseMethod objects or a list of functions
             that take a string and return a string. Alternatively, can be a string with the
             value "all", "regex" or "models" to use the default steps. Defaults to "all".
+
+        Raises:
+            ValueError: if steps is string that does not match any of the accepted values.
+
         """
         if isinstance(steps, str):
             if steps == "all":
