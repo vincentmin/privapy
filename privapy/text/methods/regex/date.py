@@ -13,10 +13,10 @@ def clean_date(text: str, replacement: str = "<<DATE>>") -> str:
     Returns:
         str: the cleaned text
     """
-    for pattern in [
+    for pattern in (
         r"\d{4}-\d{2}-\d{2}",
         r"\d{2}/\d{2}/\d{4}",
-    ]:
+    ):
         text = re.sub(pattern, replacement, text)
     return text
 

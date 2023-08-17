@@ -11,10 +11,10 @@ def clean_time(text: str, replacement: str = "<<TIME>>") -> str:
     Returns:
         str: the cleaned text
     """
-    for pattern in [
+    for pattern in (
         r"\d{2}:\d{2}:\d{2}",
         r"\d{2}:\d{2}",
-    ]:
+    ):
         text = re.sub(pattern, replacement, text)
     return text
 
