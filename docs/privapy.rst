@@ -7,6 +7,7 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
+   privapy.image
    privapy.text
 
 Module contents

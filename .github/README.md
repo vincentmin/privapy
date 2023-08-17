@@ -19,6 +19,10 @@ Visit [Read the Docs](https://privapy.readthedocs.org) for the full documentatio
 pip install privapy
 ```
 
+## Disclaimer
+
+This package provides no guarantee of anonymity. It is the user's responsibility to ensure that the data is properly anonymized. The authors of this package are not responsible for any results or misuse of this package.
+
 ## Usage
 
 ### text
@@ -42,6 +46,11 @@ cleaner = ImageCleaner()
 img = Image.open("image.jpg")
 cleaned_image = cleaner.clean(img)
 ```
+
+input image (`img`):
+![input image](../docs/_static/input.png)
+output image (`cleaned_image`):
+![output image](../docs/_static/output.png)
 
 ## Coming in future releases
 
